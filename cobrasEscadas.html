@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Cobras e Escadas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            input{
+                display: block;
+            }
+        </style>
+        <div id="jogo" style="display: none;">
+            <div style="width: 19%;float: left;">
+
+                <div style="width: 49%;float: left;">
+                    <label for="dado1">Dado 1</label>
+                    <input type="text"  name="dado1" id="dado1" onkeydown="return funcoes.numbersOnly(event);" maxlength="1">
+                </div>
+
+                <div style="width: 49%;float: right;">
+                    <label for="dado2">Dado 2</label>
+                    <input type="text"  name="dado2" id="dado2" onkeydown="return funcoes.numbersOnly(event);" maxlength="1">
+                </div>
+                <br><br><br>
+                <div id="acoes">
+                    <button onclick="Jogo.jogar(document.getElementById('dado1').value, document.getElementById('dado2').value)">Jogar</button>
+                    <button onclick="Jogo.dadoAleatorio()">Jogar com Dados Aleatorios</button>
+                    <button onclick="funcoes.novoJogo(document.getElementById('jog1').value, document.getElementById('jog2').value)">Reiniciar Jogo</button>
+                </div>
+            </div>   
+            <div style="border: 1px solid;width: 15%; height: 30%;float:left; margin-left: 2%;">
+                <div id="descricaoJogadores" style="text-align: center"></div>
+                <div id="vezAtual" style="color: red;font-weight: bold;"></div>
+                <div id="posicaoJogadores"></div>
+            </div>
+            <div id="console" style="border: 1px solid;width: 50%; height:auto;overflow:hidden;float:right;"></div>
+        </div>
+        <br>
+        <div id="inicio">
+            <div  style="width: 19%;float: left;">
+
+                <div style="width: 49%;float: left;">
+                    <label for="dado1">Nome Jogador 1</label>
+                    <input type="text"  name="jog1" id="jog1"  maxlength="10">
+                </div>
+
+                <div style="width: 49%;float: right;">
+                    <label for="dado2">Nome Jogador 2</label>
+                    <input type="text"  name="jog2" id="jog2"  maxlength="10">
+                </div>
+                <br><br><br>
+                <div id="acoes">
+                    <button onclick="funcoes.novoJogo(document.getElementById('jog1').value, document.getElementById('jog2').value)">Novo Jogo</button>
+                </div>
+            </div>
+        </div>
+        <script src="jsTesteEscr.js" type="text/javascript"></script>
+
+    </body>
+</html>
+
+
