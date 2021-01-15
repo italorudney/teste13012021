@@ -69,6 +69,10 @@ atual e Y é a casa em que ele estará ao finalizar sua jogada
 
 Como Rodar:
 
-Para rodar o projeto baixar os dois arquivos e colocalos em mesmo diretorio no computador, acessar o arquivo cobrasEscadas.html em um browser e testar via interface simples criada com html basico.
+- Para rodar o projeto baixar os dois arquivos e colocalos em mesmo diretorio no computador, acessar o arquivo cobrasEscadas.html em um browser e testar via interface simples criada com html basico.
+
+- Acesse o link http://usve267958.serverprofi24.com/cobrasEscadas/
 
 OBS: Testado na versão 87.0.4280.88 do Google Chrome.
+
+
